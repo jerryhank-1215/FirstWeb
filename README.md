@@ -61,3 +61,65 @@
 ``` 
 print("hello world!") 
 ```
+
+---
+# Web前端学习
+
+## HTML
+
+> HTML通过一系列的 **标签** 来定义文本、图像、链接  
+> HTML标签是由 **尖括号** 包围的关键字
+
+标签通常成对出现  
+以下为**双标签** #*用于有内容的元素*
+
+``` HTML
+<p>这是一个段落</p>
+<h1>这是一个标题</h1>
+<a jerryandhank1215="#">这是一个超链接</a>
+```
+
+除了双标签，也存在**单标签** #*用于无内容的元素*
+
+``` HTML
+<input type="text">
+<br> #换行标签
+<hr> #分割线标签
+```
+
+## HTML 文件结构
+
+```HTML
+<!-- 这里放置文档的元信息 -- >
+<! DOCTYPE html>          #告诉浏览器此为HTML文件
+<html>
+  <head>
+    <!-- 这里放置文档的元信息 -- >
+    <title>文档标题</title>
+    <meta charset="UTF-8">
+    <!-- 连接外部样式表或脚本文件等 -- >
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- 这里放置页面内容 -- >
+    <h1>这是一个标题</h1>
+    <p>这是一个段落。</p>
+    <a href="https://www.example.com">这是一个链接</a>
+    <!-- 其他内容 -- >
+  </body>
+</html>
+```
+$line 3, line 19$ 为 HTML 标签对, 表明文档 **起始点**  
+$head$ 标签对， 包含一些文件的 **原信息**  
+$body$ 标签对， 包含 **实际显示在浏览器页面的内容**
+
+---
+
+
+## HTML **文本** 标签
+
+1. **标题** 标签  
+  ```<h1>```  
+  ```<h2>```  
+  一直到 **h6**
