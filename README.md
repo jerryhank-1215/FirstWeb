@@ -10,6 +10,10 @@
 >
 >**阿坤** 啥都能接   
 
+<br>
+<img src="fenda.jpg" alt="没座" width="300" height="150"></img>
+<br>
+
 ---
 ### 吟唱： 
 * 第一阶段： 
