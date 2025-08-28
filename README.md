@@ -12,6 +12,7 @@
 
 <br>
 <img src="fenda.jpg" alt="没座" width="300" height="150"></img>
+
 <br>
 
 ---
@@ -240,4 +241,91 @@ $body$ 标签对， 包含 **实际显示在浏览器页面的内容**
         <li>有序列表3</li>
     </ol>
     ```  
+
+## HTML 标签**属性**
+  <h3>HTML常见标签属性</h3>
+  <hr>
+  <h3> a的 herf 超链接属性 </h3>
+  （其他网页链接、文件路径、电子邮箱地址、手机号码）
+  <br>
+  <a href="https://jerryhank-1215.github.io/FirstWeb/#/?id=html">MyFirstWeb</a>
+  默认覆盖当前页面
+
+<br>
+
+  ```HTML
+  <a href="https://example.com"> example </a>
+  ```
+
+  <h3> a的 target 属性</h3>
+  <hr>
+  （决定链接打开方式）
+  <br>
+  （_self 当前窗口打开， _blank 新窗口打开， _parent 父窗口打开， _top 全屏打开）
+  <hr>
     
+  <a href="https://jerryhank-1215.github.io/FirstWeb/#/?id=html" target="_blank">MyFirstWeb</a>
+  新窗口打开
+  
+  <a href="https://jerryhank-1215.github.io/FirstWeb/#/?id=html" target="_parent">MyFirstWeb</a>
+  父窗口打开
+  
+  <a href="https://jerryhank-1215.github.io/FirstWeb/#/?id=html" target="_top">MyFirstWeb</a>
+  全屏打开
+  <br>
+
+  ```HTML
+   <a href="https://example.com" target="_top or _blank or _parent"> 
+   example </a>
+  ```
+
+    
+    
+  <h3> a的 download 属性 </h3>
+  <hr>
+  （下载属性，点击链接后会下载而不是跳转）
+    <br>
+    <a href="https://th.bing.com/th/id/OIP.QSkNF06A6BFJ37TPgSK0-QHaEo?w=303&h=189&c=7&r=0&o=7&dpr=1.6&pid=1.7&rm=3" download>下载坤哥</a>
+    <br>
+
+  <h3> img的 src 属性 </h3>
+  <hr>  
+    （决定 <b>图片路径</b> ，可以是相对路径，也可以是绝对路径，还可以是网络路径url）
+    <br>
+    <img src="https://th.bing.com/th/id/OIP.QSkNF06A6BFJ37TPgSK0-QHaEo?w=303&h=189&c=7&r=0&o=7&dpr=1.6&pid=1.7&rm=3" alt="">嘻嘻
+    <br>
+
+  <h3> img的 alt 属性 </h3>
+  <hr>
+    （当图片无法显示时，显示的替代文本）
+    <br>
+    <br>
+    <img src="https://th.bing.com" alt="坤哥无法显示">
+    <br>
+
+  <h3>img 调整图像大小</h3>
+  <hr>
+  （width 宽度 height 高度）
+    <br>
+    <img src="https://th.bing.com/th/id/OIP.QSkNF06A6BFJ37TPgSK0-QHaEo?w=303&h=189&c=7&r=0&o=7&dpr=1.6&pid=1.7&rm=3" alt="" height="114" width="514">
+    <br>
+    帅吧？
+    <br>
+
+
+## HTML **区块**
+
+### 块元素
+（通常用于组织和布局页面的 **主要结构** 和 **内容**）   
+- 块级元素通常会 **从新行开始** ，并占据 **整行**（浏览器中）的宽度  
+  以呈现出 **独立的内容块**
+- 可包含其他 **块级元素** 和 **行内元素**
+- 常见的块级元素：``<div>`` , ``<p>`` , ``<h1>到<h6>`` , ``<ul>``, ``<ol>`` , ``<li>`` , ``<table>`` , ``<form>``
+
+
+### 行内元素
+(通常用于 **添加文本样式** 或为文本中的 **一部分应用样式**)  
+- 行内元素通常在同一行内呈现, 只占据其内容所需的宽度,   
+  **不会独占一行**。
+- 行内元素不能包含块级元素, 但可以包含其他行内元素。
+- 常见的行内元素: `<span>` , `<a>` , `<strong>` , `<em>` , `<img>` , `<br>` , `<input>`等。
