@@ -329,3 +329,112 @@ $body$ 标签对， 包含 **实际显示在浏览器页面的内容**
   **不会独占一行**。
 - 行内元素不能包含块级元素, 但可以包含其他行内元素。
 - 常见的行内元素: `<span>` , `<a>` , `<strong>` , `<em>` , `<img>` , `<br>` , `<input>`等。
+
+
+## HTML **表单**
+<h3>表单：</h3>
+    表单是一种带有空格可用于书写以及能选择和勾选相似内容的文件<br>  
+    如B站注册页面的 “账号” “密码” 的空格栏  
+      
+<h3>使用：</h3>
+    使用 <i>form</i> 作为容器 <br>     
+    使用 <i>label</i> 或者<i> span</i> 输入文字 <br>
+    使用<i> input</i> 达到交互 <br>
+    placeholder 显示灰色字用于提示用户<br>  
+    value 显示黑字而且框中有实值  
+    <br>
+    <br>
+    - 特别说明：<br>
+    若<b><i> label标签</i></b> 的属性<b><i> for=“”</i></b> 中的内容与下面<b><i> input标签</b></i> 的<b><i> id属性</b></i> 中的 内容相同，<br>
+    则在网页中 <b><i>点击label</b></i> 的文字即可触发 <b><i>input</b></i> (不信你试试), <br>
+    可方便手机用户 
+    <br> 
+    <br>
+
+
+```HTML
+<form action="">
+        <label for="name">姓名</label>
+        <input id="name" type="text" placeholder="please type your name">   ##: 使用“type”属性说明是输入“文字”还是选择“选项”
+        <br>
+
+        <span for="point">评分</span>
+        <input id="point" type="text" value="already have value">  ##：type=“text” 说明是输入框
+        <br>
+
+        <label for="opinion">赞同？</label>
+        <br>
+
+        <label for="opinion">是</label>
+        <input type="radio" id="opinion" name="agree">   ##:type=“ratio” 说明是选项
+        <label for="opinion">否</label>
+        <input type="radio" id="opinion" name="agree">   ##:由于id=“opinion” 避免了多选
+    </form>   
+```
+<h3>效果：</h3>
+
+<form action="">
+  <label for="name">姓名</label>
+  <input id="name" type="text" placeholder="please type your name">
+  <br>
+
+  <span for="point">评分</span>
+  <input id="point" type="text" value="already have value">
+  <br>
+  <label for="opinion">赞同？</label>
+  <br>
+  <label for="opinion">是</label>
+  <input type="radio" id="opinion" name="agree">
+  <label for="opinion">否</label>
+  <input type="radio" id="opinion" name="agree">
+</form>    
+    
+
+## CSS
+
+常用于**页面设计**，添加颜色、样式  
+
+### CSS语法
+CSS通常由 **选择器、属性 和 属性值** 组成  
+
+```
+1     选择器 {
+2         属性1： 属性值1；
+3         属性2： 属性值2；
+4     }
+```
+
+1. 选择器的说明中可以写 **无数条** 属性
+2. 声明中每一行属性都要以 **英文** 分号结尾
+3. 声明中 所有属性和值 都是以 **键值对** 这种形式出现的
+
+
+```HTML
+/*这是一个p标签选择器*/
+p {
+  color: brown;
+  font-size: 16px
+}
+```
+
+<br>
+<br>  
+
+
+<h1>CSS 导入方式</h1> 
+
+<h3>
+    CSS导入方式有三种:
+</h3>
+    
+1. 内联样式（Inline Styles）:直接在HTML标签的`style`属性       
+
+2. 内部样式表（Internal Style Sheets）:在HTML文档的`head`部分使用`style`标签
+
+3. 外部样式表（External Style Sheets）:通过`link`标签链接到外部CSS文件（方便与同一种样式应用在多个网页上）
+        
+<h3>
+  <span  style="background-color:grey; color=black;">
+  三种导入方式的优先级：内联样式 > 内部样式表 > 外部样式表
+  </span>
+</h3>
